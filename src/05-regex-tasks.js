@@ -80,9 +80,6 @@ function getRegexForPitSpot() {
  */
 function getPasswordValidator(/* minLength */) {
   throw new Error('Not implemented');
-/*  console.log(minLength);
-  const test = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{minLength}/g;
-  return test; */
 }
 
 

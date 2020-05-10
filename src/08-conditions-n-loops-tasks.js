@@ -273,9 +273,8 @@ function reverseInteger(num) {
 function isCreditCardNumber(ccn) {
   const num = ccn.toString().split('');
   let sum = 0;
-  console.log(sum);
-  for (let i = 0; i < num.length; i += 1) {
-    sum += +num[i];
+  for (let i = sum; i < num.length; i += 1) {
+    sum += num[i];
   }
   sum -= num[0];
   const arr = [];

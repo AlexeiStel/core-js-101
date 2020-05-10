@@ -476,8 +476,6 @@ function getIdentityMatrix(n) {
  */
 function getIntervalArray(/* start, end */) {
   throw new Error('Not implemented');
-/*  const arr = Array.from({ length: end - start + 1 });
-  return arr.fill(start).map((e, i) => (i + 1)); */
 }
 
 /**
@@ -493,8 +491,6 @@ function getIntervalArray(/* start, end */) {
  */
 function distinct(/* arr */) {
   throw new Error('Not implemented');
-  /* return arr.reduce((prev, curr) => { return prev.indexOf(curr)
-     >= 0 ? prev : prev.concat(curr); }, []); */
 }
 
 /**

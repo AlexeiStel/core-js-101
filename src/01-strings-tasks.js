@@ -248,48 +248,6 @@ function getRectangleString(width, height) {
  */
 function encodeToRot13(/* value */) {
   throw new Error('Not implemented');
-  /* return str.replace(/([A-M])|([a-m]])|([N-Z])|([n-z])/g, function(match, p1, p2, p3, p4) {
-      switch(match) {
-        case p1:
-        case p2:
-          return String.fromCharCode(match.charCodeAt(0) + 13);
-        case p3:
-        case p4:
-          return String.fromCharCode(match.charCodeAt(0) - 13);
-      }
-    });
-    const alphabetUpper = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
-    'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X','Y','Z'];
-    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
-    'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X','Y','Z'];
-      let str1;
-      for (let i = 0; i < str.length; i += 1) {
-        for (let j = 0; j < alphabetUpper.length; j += 1) {
-          for (let k = 0; k < alphabet.length; k += 1) {
-          let char = str[i].toUpperCase();
-          let charL = str[i].toLowerCase();
-        let symb = alphabetUpper[j].toLowerCase();
-          if (str[i] === char && str[i] === alphabetUpper[j] && j < 13) {
-              j = j + 13;
-              str1 += alphabetUpper[j];
-             console.log(str[i].toUpperCase());
-               console.log(j);
-               console.log(str[i]);
-
-            } else if (str[i] === char && str[i] === alphabetUpper[j] && j > 13) {
-              j -= 13;
-              str[i] = alphabetUpper[j];
-            } else if (str[i] === charL && str[i] === alphabetUpper[j] && j < 13) {
-              j += 13;
-              str[i] = symb[j];
-            } else if (str[i] === charL && str[i] === alphabetUpper[j] && j > 13){
-              j -= 13;
-              str[i] = symb[j];
-            }
-          }
-        }
-      }
-      return str; */
 }
 
 /**
